@@ -1,0 +1,16 @@
+{
+  "name": "作业小花园",
+  "short_name": "作业花园",
+  "description": "用生命值和花园激励孩子每天完成作业",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#fff0f5",
+  "theme_color": "#ffb6c1",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icon-192.png", "sizes": "any", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

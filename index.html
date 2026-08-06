@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <!-- 关键：让 iPad Safari 全屏、隐藏地址栏、禁缩放 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="作业小花园" />
+  <meta name="theme-color" content="#ffb6c1" />
+  <link rel="apple-touch-icon" href="icon-180.png" />
+  <link rel="icon" href="icon-192.png" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>作业小花园</title>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">🌻 作业小花园</div>
+    <div class="header-right">
+      <div class="life-box">
+        <span class="heart">❤️</span>
+        <span id="lifePoints">0</span>
+      </div>
+      <button class="icon-btn" id="helpBtn" title="使用帮助">❓</button>
+      <button class="icon-btn" id="gearBtn" title="家长设置">⚙️</button>
+    </div>
+  </header>
+
+  <div class="date-bar" id="todayDate">今天</div>
+
+  <main id="view"><!-- 各标签页内容由 JS 渲染 --></main>
+
+  <nav class="tabs">
+    <button class="tab" data-tab="homework"><span>📚</span>作业打卡</button>
+    <button class="tab" data-tab="shop"><span>🛒</span>种子商店</button>
+    <button class="tab" data-tab="garden"><span>🌷</span>我的花园</button>
+  </nav>
+
+  <div id="toast" class="toast"></div>
+  <div id="modalMask" class="modal-mask hidden">
+    <div id="modalBox" class="modal-box"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
